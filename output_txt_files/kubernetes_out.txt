@@ -1,0 +1,16 @@
+﻿<paste log output from Kubernetes-mediated prediction, here>
+
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+deployment.apps/udacity created
+NAME                       READY   STATUS              RESTARTS   AGE
+udacity-7643fb788c-klztf   0/1     ContainerCreating   0          0s
+Introducing sleep for 25seconds for pod to start
+Forwarding from [::1]:8080 -> 80
+
+(.devops) jalal@jalal-VivoBook-E14-E402WAS:~/udacity_project/DevOps_Microservices/project-ml-microservice-kubernetes$ ./make_prediction.sh
+Port: 8080
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
